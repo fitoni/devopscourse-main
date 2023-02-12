@@ -1,4 +1,4 @@
 provider "aws" {
-  alias = "southeast
+  alias = "southeast"
   region = "ap-southeast-3"
 }
