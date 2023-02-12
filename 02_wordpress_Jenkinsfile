@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
     string(name: 'STACK_NAME', defaultValue: 'wordpress-test01', description: 'Enter the CloudFormation Stack Name.')
-    string(name: 'PARAMETERS_FILE_NAME', defaultValue: '02_wordpress_parameter.properties', description: 'Enter the Parameters File Name (Must contain file extension type *.properties)')
+    string(name: 'PARAMETERS_FILE_NAME', defaultValue: 'example-stack-parameters.properties', description: 'Enter the Parameters File Name (Must contain file extension type *.properties)')
     string(name: 'TEMPLATE_NAME', defaultValue: '02_wordpress.json', description: 'Enter the CloudFormation Template File Name')
     choice(
       name: 'REGION',
